@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timestamp Microservice</title>
+</head>
+<body>
+    <h1>Timestamp Microservice</h1>
+
+    <h2>Converter Data</h2>
+    <input type="text" id="dateInput" placeholder="Data ou timestamp">
+    <select id="timezone">
+        <option value="UTC">UTC</option>
+        <option value="America/Sao_Paulo">America/Sao_Paulo</option>
+        <option value="Europe/London">Europe/London</option>
+    </select>
+    <button onclick="getTimestamp()">Converter</button>
+    <div id="result"></div>
+
+    <h2>Diferença entre Datas</h2>
+    <input type="text" id="date1" placeholder="Data 1">
+    <input type="text" id="date2" placeholder="Data 2">
+    <button onclick="getDateDiff()">Calcular Diferença</button>
+    <div id="diffResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
